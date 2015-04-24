@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1429202318991
+Build-Jdk: 1.7.0_71
+Built-By: estafet
+Bundle-ManifestVersion: 2
+Bundle-Name: A Camel Blueprint Route
+Bundle-SymbolicName: camel-blueprint
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: com.estafet.insurance.claim;uses:="javax.xml.bind.annota
+ tion";version="1.0.0.SNAPSHOT"
+Import-Package: javax.xml.bind.annotation,org.apache.activemq,org.apache
+ .activemq.camel.component,org.apache.activemq.pool,org.apache.camel.com
+ ponent.jms,org.apache.camel.component.sql;version="[2.12,3)",org.apache
+ .commons.dbcp;version="[1.4,2)",org.osgi.service.blueprint;version="[1.
+ 0.0,2.0.0)"
+Tool: Bnd-1.50.0

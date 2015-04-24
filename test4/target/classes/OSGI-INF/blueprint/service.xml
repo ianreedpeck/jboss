@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+       xmlns:camel="http://camel.apache.org/schema/blueprint"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cxf="http://camel.apache.org/schema/blueprint/cxf"
+       xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+       http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
+
+<cxf:rsServer id="rsServer" address="http://localhost:9090/route" 
+		serviceClass="com.estafet.insurance.claim.endpoint.SimpleService"/>
+		
+ 	
+
+  <camelContext trace="false" xmlns="http://camel.apache.org/schema/blueprint">
+  <route id="summaryRoute">
+    <from uri="cxfrs:bean:rsServer"/>
+    <convertBodyTo type="java.lang.String"/>
+    <log message="The end of the ${body}"/>
+    <marshal>
+      <json library="Jackson"/>
+    </marshal>
+    <setHeader headerName="TRUE">
+      <constant>CamelCxfRsUsingHttpAPI</constant>
+    </setHeader>
+    <setHeader headerName="application/json">
+      <constant>ACCEPT</constant>
+    </setHeader>
+    <multicast>
+      <convertBodyTo type="java.lang.String"/>
+      <to uri="file:///home/estafet/Desktop/xmlout"/>
+    </multicast>
+  </route>
+</camelContext>
+
+</blueprint>

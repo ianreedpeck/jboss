@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1429198868722
+Build-Jdk: 1.7.0_71
+Built-By: estafet
+Bundle-ManifestVersion: 2
+Bundle-Name: A Camel Blueprint Route
+Bundle-SymbolicName: camel-blueprint
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.activemq.camel.component;uses:="org.apache.ac
+ tivemq.command,javax.jms,org.apache.activemq,org.apache.camel,org.apach
+ e.activemq.advisory,org.slf4j,org.apache.camel.util,org.springframework
+ .jms.connection,org.apache.camel.component.jms,org.apache.camel.spi,org
+ .springframework.transaction,org.apache.activemq.spring,javax.annotatio
+ n";version="5.9.0.redhat-610379"
+Import-Package: javax.annotation,javax.jms;version="[1.1,2)",javax.xml.b
+ ind.annotation,org.apache.activemq,org.apache.activemq.advisory,org.apa
+ che.activemq.command,org.apache.activemq.spring,org.apache.camel;versio
+ n="[2.12,3)",org.apache.camel.component.jms;version="[2.12,3)",org.apac
+ he.camel.component.sql;version="[2.12,3)",org.apache.camel.spi;version=
+ "[2.12,3)",org.apache.camel.util;version="[2.12,3)",org.apache.commons.
+ dbcp;version="[1.4,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0
+ )",org.slf4j;version="[1.7,2)",org.springframework.jms.connection,org.s
+ pringframework.transaction
+Tool: Bnd-1.50.0

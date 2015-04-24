@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.estafet.camel.blueprint.RouteTest" time="14.751" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/u01/app/jdk1.7.0_71/jre/lib/amd64"/>
+    <property name="java.vm.version" value="24.71-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/u01/software/ws8/testlocalVM"/>
+    <property name="java.runtime.version" value="1.7.0_71-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/u01/app/jdk1.7.0_71/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/u01/software/ws8/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf522733568602984556.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.17.6-300.fc21.x86_64"/>
+    <property name="user.home" value="/home/estafet"/>
+    <property name="user.timezone" value="Europe/Sofia"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="estafet"/>
+    <property name="java.class.path" value="/u01/app/jbdevstudio8/studio/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/u01/app/jdk1.7.0_71/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_71"/>
+    <property name="java.ext.dirs" value="/u01/app/jdk1.7.0_71/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/u01/app/jdk1.7.0_71/jre/lib/resources.jar:/u01/app/jdk1.7.0_71/jre/lib/rt.jar:/u01/app/jdk1.7.0_71/jre/lib/sunrsasign.jar:/u01/app/jdk1.7.0_71/jre/lib/jsse.jar:/u01/app/jdk1.7.0_71/jre/lib/jce.jar:/u01/app/jdk1.7.0_71/jre/lib/charsets.jar:/u01/app/jdk1.7.0_71/jre/lib/jfr.jar:/u01/app/jdk1.7.0_71/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/u01/software/ws8/testlocalVM/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testRoute" classname="com.estafet.camel.blueprint.RouteTest" time="14.751">
+    <failure message="mock://result Received message count 0, expected at least 1" type="java.lang.AssertionError">java.lang.AssertionError: mock://result Received message count 0, expected at least 1
+	at org.apache.camel.component.mock.MockEndpoint.fail(MockEndpoint.java:1333)
+	at org.apache.camel.component.mock.MockEndpoint.assertTrue(MockEndpoint.java:1321)
+	at org.apache.camel.component.mock.MockEndpoint.doAssertIsSatisfied(MockEndpoint.java:390)
+	at org.apache.camel.component.mock.MockEndpoint.assertIsSatisfied(MockEndpoint.java:362)
+	at org.apache.camel.component.mock.MockEndpoint.assertIsSatisfied(MockEndpoint.java:350)
+	at org.apache.camel.component.mock.MockEndpoint.assertIsSatisfied(MockEndpoint.java:188)
+	at org.apache.camel.test.junit4.CamelTestSupport.assertMockEndpointsSatisfied(CamelTestSupport.java:675)
+	at com.estafet.camel.blueprint.RouteTest.testRoute(RouteTest.java:21)
+</failure>
+    <system-out><![CDATA[[                          main] CamelBlueprintHelper           INFO  Using Blueprint XML file: /u01/software/ws8/testlocalVM/target/classes/OSGI-INF/blueprint/blueprint.xml
+[                      Thread-0] RawBuilder                     INFO  Copy thread finished.
+[                          main] Activator                      INFO  Camel activator starting
+[                          main] Activator                      INFO  Camel activator started
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.camel.camel-cxf-transport (17) [org.apache.camel.component.cxf.transport.CamelTransportFactory]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (18) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (20) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (21) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (24) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (35) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (36) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+[                          main] CXFActivator                   INFO  Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (37) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+[                          main] BlueprintExtender              INFO  No quiesce support is available, so blueprint components will not participate in quiesce operations
+[                          main] RouteTest                      INFO  ********************************************************************************
+[                          main] RouteTest                      INFO  Testing: testRoute(com.estafet.camel.blueprint.RouteTest)
+[                          main] RouteTest                      INFO  ********************************************************************************
+[         Blueprint Extender: 3] BlueprintContainerImpl         INFO  Bundle org.apache.cxf.cxf-rt-transports-http is waiting for namespace handlers [http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.0.0]
+[                          main] RouteTest                      INFO  Skipping starting CamelContext as system property skipStartingCamelContext is set to be true.
+[                          main] BlueprintCamelContext          INFO  Apache Camel 2.12.0.redhat-610379 (CamelContext: blueprintContext) is starting
+[                          main] DefaultManagementStrategy      INFO  JMX is disabled
+[                          main] BlueprintCamelContext          INFO  AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+[                          main] BlueprintCamelContext          INFO  StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[                          main] JaxbDataFormat                 INFO  Creating JAXBContext with contextPath: com.estafet.insurance.claim and ApplicationContextClassLoader: BundleDelegatingClassLoader(RouteTest [73])
+[                          main] XPathBuilder                   INFO  Created default XPathFactory com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl@39346bcc
+[                          main] JaxbDataFormat                 INFO  Creating JAXBContext with contextPath: com.estafet.insurance.claim and ApplicationContextClassLoader: BundleDelegatingClassLoader(RouteTest [73])
+[                          main] BlueprintCamelContext          INFO  Route: ClaimHandler started and consuming from: Endpoint[file:///home/estafet/Desktop/xmldemo]
+[                          main] BlueprintCamelContext          INFO  Total 1 routes, of which 1 is started.
+[                          main] BlueprintCamelContext          INFO  Apache Camel 2.12.0.redhat-610379 (CamelContext: blueprintContext) started in 0.219 seconds
+[                          main] MockEndpoint                   INFO  Asserting: Endpoint[mock://result] is satisfied
+[                          main] RouteTest                      INFO  ********************************************************************************
+[                          main] RouteTest                      INFO  Testing done: testRoute(com.estafet.camel.blueprint.RouteTest)
+[                          main] RouteTest                      INFO  Took: 10.230 seconds (10230 millis)
+[                          main] RouteTest                      INFO  ********************************************************************************
+[                          main] BlueprintCamelContext          INFO  Apache Camel 2.12.0.redhat-610379 (CamelContext: blueprintContext) is shutting down
+[                          main] DefaultShutdownStrategy        INFO  Starting to graceful shutdown 1 routes (timeout 10 seconds)
+[text) thread #1 - ShutdownTask] DefaultShutdownStrategy        INFO  Route: ClaimHandler shutdown complete, was consuming from: Endpoint[file:///home/estafet/Desktop/xmldemo]
+[                          main] DefaultShutdownStrategy        INFO  Graceful shutdown of 1 routes completed in 0 seconds
+[                          main] BlueprintCamelContext          INFO  Apache Camel 2.12.0.redhat-610379 (CamelContext: blueprintContext) uptime 10.275 seconds
+[                          main] BlueprintCamelContext          INFO  Apache Camel 2.12.0.redhat-610379 (CamelContext: blueprintContext) is shutdown in 0.042 seconds
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle RouteTest
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-transports-http
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.aries.blueprint
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-transports-http-jetty
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-api
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-core
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-frontend-jaxrs
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-ws-policy
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-bindings-soap
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-features-clustering
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-ws-addr
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-frontend-simple
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.cxf.cxf-rt-frontend-jaxws
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.camel.camel-blueprint
+[                          main] BlueprintExtender              INFO  Destroying BlueprintContainer for bundle org.apache.camel.camel-cxf-transport
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 20
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 18
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 36
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 35
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 37
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 17
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 24
+[                          main] CXFActivator                   INFO  Removing the extensions for bundle 21
+[                          main] Activator                      INFO  Camel activator stopping
+[                          main] Activator                      INFO  Camel activator stopped
+[                          main] CamelBlueprintHelper           INFO  Deleting work directory target/bundles/1429179524866
+]]></system-out>
+  </testcase>
+</testsuite>
